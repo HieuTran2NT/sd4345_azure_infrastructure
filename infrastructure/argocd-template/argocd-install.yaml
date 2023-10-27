@@ -14,7 +14,7 @@ global:
 ## Redis
 redis:
   # -- Enable redis
-  enabled: false
+  enabled: true
   # -- Redis name
   name: redis
 

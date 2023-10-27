@@ -6,5 +6,5 @@ argocd:
 apps:
   repoUrl: git@github.com:HieuTran2NT/sd4345_azure_infrastructure.git
   targetRevision: HEAD
-  path: infrastructure/apps/argocd-application
+  path: infrastructure/argocd-application
   
