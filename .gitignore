@@ -1,0 +1,3 @@
+environments/dev/terraform.tfstate
+environments/dev/terraform.tfstate.backup
+environments/dev/.terraform/

@@ -1,0 +1,32 @@
+nameOverride: argocd
+# -- String to fully override `"argo-cd.fullname"`
+fullnameOverride: ""
+# -- Override the Kubernetes version, which is used to evaluate certain manifests
+kubeVersionOverride: ""
+global:
+  image:
+    # -- If defined, a repository applied to all Argo CD deployments
+    repository: quay.io/argoproj/argocd
+    # -- Overrides the global Argo CD image tag whose default is the chart appVersion
+    tag: ""
+    # -- If defined, a imagePullPolicy applied to all Argo CD deployments
+    imagePullPolicy: IfNotPresent
+## Redis
+redis:
+  # -- Enable redis
+  enabled: false
+  # -- Redis name
+  name: redis
+
+  image:
+    # -- Redis repository
+    repository: public.ecr.aws/docker/library/redis
+    # -- Redis tag
+    tag: 7.0.5-alpine
+    # -- Redis imagePullPolicy
+    imagePullPolicy: IfNotPresent
+
+  # -- Secrets with credentials to pull images from a private registry
+  # @default -- `[]` (defaults to global.imagePullSecrets)
+  imagePullSecrets: []
+

@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: backend-app
+  namespace: default
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: dev
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: infrastructure/apps/backend
+    repoURL: git@github.com:HieuTran2NT/sd4345_azure_infrastructure.git
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+      - values.yaml
+      releaseName: backend-app
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
+
