@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: pishapeddevacr01.azurecr.io/frontend:20231026.10
+  repository: pishapeddevacr01.azurecr.io/frontend
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "20231026.10"
 
 imagePullSecrets: []
 nameOverride: ""
