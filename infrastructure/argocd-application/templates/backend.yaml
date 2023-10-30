@@ -7,7 +7,7 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
   annotations:
     argocd-image-updater.argoproj.io/image-list: image=pishapeddevacr01.azurecr.io/backend
-    argocd-image-updater.argoproj.io/image.pull-secret: pullsecret:default/acr-secret-pull
+    argocd-image-updater.argoproj.io/image.pull-secret: pullsecret:argocd/acr-secret-pull
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/git-branch: main
     argocd-image-updater.argoproj.io/image.update-strategy: latest
