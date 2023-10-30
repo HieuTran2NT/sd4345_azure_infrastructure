@@ -55,6 +55,7 @@ module "aks" {
   acr_id = module.acr.id
   vnet_subnet_id = module.network.vnet_subnet_id[0]
   agents_availability_zones = ["2","3"]
+  temporary_name_for_rotation = "tmlagentpool"
 }
 data "azurerm_kubernetes_cluster" "default" {
   # depends_on          = [module.aks] # refresh cluster state before reading

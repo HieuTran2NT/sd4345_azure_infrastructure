@@ -35,8 +35,11 @@ variable "automatic_channel_upgrade" {
   default = "patch"
 }
 variable "agents_size" {
-  default = "standard_b2s"
+  default = "standard_b2ms"
 }
 variable "agents_count" {
   default = 1
+}
+variable "temporary_name_for_rotation" {
+  
 }

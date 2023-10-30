@@ -19,4 +19,5 @@ module "aks" {
   agents_availability_zones     = var.agents_availability_zones 
   agents_size                   = var.agents_size     
   agents_count                  = var.agents_count
+  temporary_name_for_rotation   = var.temporary_name_for_rotation
 }
