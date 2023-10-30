@@ -15,5 +15,5 @@ spec:
       prune: true
   source:
     repoURL: 'https://istio-release.storage.googleapis.com/charts'
-    targetRevision: 1.19.2
-    chart: istio/base
+    targetRevision: 1.19.3
+    chart: istio
