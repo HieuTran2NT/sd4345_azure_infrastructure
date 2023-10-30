@@ -19,4 +19,4 @@ spec:
     chart: istiod
     helm:
       valueFiles:
-      - values-istio.yaml
+      - $values/values-istio.yaml
