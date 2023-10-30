@@ -4,5 +4,5 @@ helm:
     value: pishapeddevacr01.azurecr.io/backend
     forcestring: true
   - name: image.tag
-    value: latest
+    value: "20231030.2"
     forcestring: true
