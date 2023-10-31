@@ -4,5 +4,5 @@ helm:
     value: pishapeddevacr01.azurecr.io/frontend
     forcestring: true
   - name: image.tag
-    value: "20231030.1"
+    value: "20231026.10"
     forcestring: true
