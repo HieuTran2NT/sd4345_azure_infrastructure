@@ -13,7 +13,7 @@ spec:
     blueGreen:
       activeService: {{ include "backend.fullname" . }}
       previewService: {{ include "backend.fullname" . }}-preview
-      autoPromotionEnabled: false
+      autoPromotionEnabled: true
   template:
     metadata:
       {{- with .Values.podAnnotations }}

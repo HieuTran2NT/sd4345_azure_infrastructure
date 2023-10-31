@@ -13,7 +13,7 @@ spec:
     blueGreen:
       activeService: {{ include "frontend.fullname" . }}
       previewService: {{ include "frontend.fullname" . }}-preview
-      autoPromotionEnabled: false
+      autoPromotionEnabled: true
   template:
     metadata:
       labels:
